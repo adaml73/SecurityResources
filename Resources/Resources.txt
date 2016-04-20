@@ -54,15 +54,33 @@ Tools:
 Harware: 
 	[To add: rtlsdr, usb(badusb), ]
 
+	Case Studies:
+		Badusb
+			https://srlabs.de/badusb/
+
+	Components: 
+		Limor Fried's (AKA Ladyada) list of sources
+			http://www.ladyada.net/library/procure/index.html
+	RTL-SDR: 
+		Realtime - Software defined radio
+		http://www.rtl-sdr.com/
+
 Devices: 
 	IDS:
 		SecurityOnion https://security-onion-solutions.github.io/security-onion/
 	
 Education: 
 	CS/Math Basics and Theory
-		Cryptography 
+		Cryptography :
+			Handbook of applied cryptography: 
+				http://cacr.uwaterloo.ca/hac/
 			
-		Number Theory
+			Art of the problem: 
+				https://www.youtube.com/user/ArtOfTheProblem
+
+			
+		Number Theory:
+			
 		
 	Programming Languages: 
 		Python
