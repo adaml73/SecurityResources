@@ -1,0 +1,77 @@
+Podcasts: 
+	Risky Business http://risky.biz/netcasts/risky-business
+	Packet Pushers Network http://packetpushers.net/
+
+Blogs: 
+	Krebs on security http://www.krebsonsecurity.com/
+	Troy Hunt https://www.troyhunt.com/
+
+
+Community forums: 
+	https://www.reddit.com/r/netsec/
+	https://security.stackexchange.com/
+	
+
+
+Microsoft Security Bulletins and patches:
+	https://technet.microsoft.com/en-us/library/security/dn610807.aspx
+
+	https://cve.mitre.org/
+
+Vulnerable Images / Sandboxes
+	Metasploitable 2
+		https://information.rapid7.com/metasploitable-download.html?LS=1631875&CS=web
+
+	OWASP Webgoat
+		https://www.owasp.org/index.php/WebGoat_Installation
+		https://github.com/WebGoat/WebGoat
+	
+	Google Guyere
+		http://google-gruyere.appspot.com/#0__hackers
+
+	
+
+Tools: 
+	Wireshark
+		https://www.wireshark.org/
+	
+	Nmap
+		https://nmap.org/
+
+	Metasploit
+		https://www.metasploit.com/
+
+	
+	
+	Fun Stuff
+		Canary Tokens
+			http://canarytokens.org/generate
+		Shodan
+			https://www.shodan.io/
+		
+	
+			
+Harware: 
+	[To add: rtlsdr, usb(badusb), ]
+
+Devices: 
+	IDS:
+		SecurityOnion https://security-onion-solutions.github.io/security-onion/
+	
+Education: 
+	CS/Math Basics and Theory
+		Cryptography 
+			
+		Number Theory
+		
+	Programming Languages: 
+		Python
+			http://learnpythonthehardway.org/
+			
+		C/C++
+			
+		Javascript
+				
+		Assembly
+		
+
