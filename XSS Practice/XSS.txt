@@ -1,0 +1,90 @@
+Cross-site scripting: 
+	Most common vulnerability on the web. 
+	http://google-gruyere.appspot.com/
+
+DOM model
+	
+
+Http and <html>
+	http: Hyper text transfer protocol (thanks tim)
+	POST: requests submission to a web server. Asks server to accept and store submitted data. 
+		method="POST"
+	GET: retrievel request, returns data from web server. Data is sent as part of the URL
+		method="GET"
+
+
+	<>Instruction</> @lt; = angle bracket 
+
+Javacript - interpreted client side: - Incredible amount of power over browser environment 
+
+	    (eloquent javascript) 
+	    
+Cookies - User data stored in text ( find definition) stored in user's web browser. When user revisits site, cookie is sent to server 
+	stored in Name/value pairs
+	username="jeff"
+	password="jeffspassword"
+
+
+Reflected XSS Attacks - Attack is stored in the actual request (i.e. URL). Attack is triggered when a server inserts the attack into a response to the user 
+	A victim triggeres this attack when they navigate to a compromsised url.
+Stored XSS -  attack is stored in the application. Attack is triggered when the victim browses to a page that renders the attack. 
+
+Getting started; 
+	Create a new user account, take care to not actualy use any personal or sensitive info as Guyere is completely compromised. 
+	after signing in navigate to 
+
+File upload XSS 
+	Notice the upload option in the menu bar..
+		Create a normal text file in you desktop, then attempt to upload it via the utility. 
+		what about a .html file? 
+			<html><p>Hello!</p></html>
+
+		What about a .html file that contains the following. 
+			<script>
+			alert(document.cookie);
+			</script>
+
+
+		
+
+Reflected XSS: 
+	
+	http://google-gruyere.appspot.com/244812333085/invalid
+
+	http://google-gruyere.appspot.com/244812333085/<script>alert(1)</script>
+
+
+Stored XSS: 
+	the page give you the ability to upload "snippets". It claims that only limited html is allowed. 
+	What happens if you upload the contents of our html file in the file upload example? 
+
+	Examine the sanitize.py file and look for some possible work arounds.
+
+	What if you encapsulated the contents of your script in a whitelisted tag? 
+		for instance..
+			<a ONMOUSEOVER="alert(1)" href="#">read this!</a>
+			or
+			<a ONMOUSEOVER="alert(document.cookie)" href="#">read this!</a> 
+
+		
+	
+
+elevating user privledge. 
+
+	examine the editprofile.gt1 file, admins and users use this to create and edit profile changes. 
+	
+	http://google-gruyere.appspot.com/244812333085/saveprofile?action=update&is_admin=True
+		sign out and refresh your page. you should now hae admin privledges
+
+Manipulating cookies: 
+
+	What was the format of the returned data after we issued the alert(document.cookie) script?
+
+	Would it be possible to trick the site into issuing you a different set of user cookies? 
+		
+		in the create account option, enter "foo|admin|author"
+		You should now have a new set of credentials
+
+Finally, 
+	Denial of service
+		With admin privledges, simply reset, or quit the server from the Manage This Server panel 
