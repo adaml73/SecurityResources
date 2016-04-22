@@ -1,10 +1,13 @@
 Podcasts: 
 	Risky Business http://risky.biz/netcasts/risky-business
 	Packet Pushers Network http://packetpushers.net/
+	
 
 Blogs: 
 	Krebs on security http://www.krebsonsecurity.com/
 	Troy Hunt https://www.troyhunt.com/
+	Bruce Schneier https://www.schneier.com/
+	Naked Security https://nakedsecurity.sophos.com/
 
 
 Community forums: 
